@@ -217,7 +217,7 @@ public class EZSwipeController: UIViewController {
         super.viewDidLoad()
     }
 
-    @objc private func clickedLeftButton() {
+    @objc public func clickedLeftButton() {
         let currentIndex = stackPageVC.indexOf(currentStackVC)!
         datasource?.clickedLeftButtonFromPageIndex?(currentIndex)
 
@@ -233,7 +233,7 @@ public class EZSwipeController: UIViewController {
         pageViewController.setViewControllers([currentStackVC], direction: UIPageViewControllerNavigationDirection.Reverse, animated: true, completion: nil)
     }
 
-    @objc private func clickedRightButton() {
+    @objc public func clickedRightButton() {
         let currentIndex = stackPageVC.indexOf(currentStackVC)!
         datasource?.clickedRightButtonFromPageIndex?(currentIndex)
 
