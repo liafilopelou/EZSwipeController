@@ -155,7 +155,7 @@ public class EZSwipeController: UIViewController {
         }
     }
 
-    private func setupViewControllers() {
+    public func setupViewControllers() {
         stackPageVC = [UIViewController]()
         for index in 0..<stackVC.count {
             let pageVC = UIViewController()
